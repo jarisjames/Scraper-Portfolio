@@ -1,6 +1,6 @@
 # The Handoff Protocol
 
-A Chrome Extension to capture, store, and export AI memory across ChatGPT, Claude, and Copilot—built on The Continuity Protocol.
+A Chrome Extension to capture, store, and export AI memory across ChatGPT, Claude, and Copilot.
 
 
 ## Features
