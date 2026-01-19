@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "The Handoff Protocol",
+  "version": "1.0",
+  "description": "Save and Load portable AI memory cards across LLMs",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://claude.ai/*",
+    "https://chatgpt.com/*",
+    "https://copilot.microsoft.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://chatgpt.com/*",
+        "https://copilot.microsoft.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
